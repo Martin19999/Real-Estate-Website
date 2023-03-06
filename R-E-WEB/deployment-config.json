@@ -1,0 +1,8 @@
+{
+    "type": "sftp",
+    "host": "byethost7.com",
+    "username": "martproj",
+    "password": "667aok102",
+    "remotePath": "/htdocs",
+    "uploadOnSave": true
+}

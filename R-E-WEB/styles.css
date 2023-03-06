@@ -1,0 +1,627 @@
+*{
+    margin: 0.5em;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.path a,.log a, .plb a{
+    padding: 0.25em 0em;
+    border-radius: 7%;
+    color: white;
+    background-color: LightSteelBlue;
+}
+
+.path a:hover,.log a:hover, .plb a:hover{
+    padding: 0.5em 0.5em;
+    border-radius: 7%;
+    color: white;
+    background-color: DeepSkyBlue;
+}
+
+
+/*************************************************index page****************************************************/
+@media screen and (min-width: 1024px){
+    #indexpage{
+       background-image: url("mainpage.jpg");
+       background-repeat:no-repeat;
+       background-size:cover;
+       text-align: center;
+    }
+
+    #indexpage body{
+        padding: 5em;
+        padding-bottom: 8em;
+        background-color: #fff;
+        opacity:0.7;
+        color:black;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #indexpage{
+       background-color: AntiqueWhite;
+       text-align: center;
+       font-size: 200%;
+    }
+}
+
+
+
+a{
+    color:black;
+}
+
+.index~ p{
+    margin-top: 4em;
+    margin-bottom: : 4em;
+}
+
+.index{
+    margin-top: 4em;
+    margin-bottom: : 4em;
+}
+
+.index a, #chooseyourplace .f a{
+  display:inline-block;
+  position:relative;
+  margin:0.4em;
+  padding:1em 1.5em;
+  cursor:pointer;
+  background:Tomato;
+  color:white;
+  z-index:0;
+
+}
+
+.index a:before, #chooseyourplace .f a:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: Red;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+}
+
+.index a:hover:before, #chooseyourplace .f a:hover:before{
+    transform: scaleX(1);
+}
+/*************************************************map page****************************************************/
+#chooseyourplace{
+    background-color: WhiteSmoke;
+}
+
+@media screen and (min-width: 1024px){
+    #chooseyourplace main{
+        column-count:2;
+        column-width: 20em;
+        column-gap: 2em;
+        column-rule: 0.0625em solid Tomato;
+    }
+    #chooseyourplace .f p{
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #chooseyourplace{
+       font-size: 200%;
+       margin:0em;
+    }
+}
+
+
+#chooseyourplace header,footer,nav{
+    text-align: center;
+    column-span: all;
+}
+
+#chooseyourplace div{
+    position: relative;
+    text-align: center;
+}
+
+#chooseyourplace div p{
+    text-align: left;
+    line-height: 2.5em;
+}
+
+#chooseyourplace nav .path{
+    text-align: left;
+}
+
+#chooseyourplace nav .log{
+    text-align: right;
+}
+
+
+
+#chooseyourplace img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
+#chooseyourplace #chooseplace a{
+    color:black;
+}
+
+#chooseyourplace #chooseplace a:hover{
+    font-size: 1.2em;
+}
+
+#chooseyourplace #chooseplace .A{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      right: 0;
+      text-align: left;
+      top: 15%;
+      width: 60%;
+}
+
+#chooseyourplace #chooseplace .B{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+
+      right: 0;
+      text-align: left;
+      top: 75%;
+      width: 78%;
+}
+
+#chooseyourplace #chooseplace .C{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+
+      right: 0;
+      text-align: left;
+      top: 20%;
+      width: 15%;
+}
+
+#chooseyourplace #chooseplace .D{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      right: 0;
+      text-align: left;
+      top: 65%;
+      width: 60%;
+}
+
+#chooseyourplace #chooseplace .E{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      right: 0;
+      text-align: left;
+      top: 32%;
+      width: 63%;
+}
+
+#chooseyourplace #chooseplace .F{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      right: 0;
+      text-align: left;
+      top: 43%;
+      width: 30%;
+}
+
+
+
+/*************************************************browse page****************************************************/
+@media screen and (min-width: 1024px){
+    #browse{
+        background-image: url("browse.jpg");
+        background-repeat: no-repeat;
+        background-size:100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #browse{
+        background-image: url("browse.jpg");
+        background-repeat: no-repeat;
+        background-size:106%;
+    }
+    #browse{
+        font-size:200%;
+    }
+    #browse img{
+        width:15em;
+    }
+}
+
+#browse main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#browse section{
+    text-align: center;
+    display: block;
+    margin: 2em 3em;
+}
+
+#browse figure{
+    display:inline;
+    text-align: center;
+}
+
+#browse header{
+    text-align: center;
+}
+
+#browse nav .path{
+    text-align: left;
+}
+
+#browse nav .log{
+    text-align: right;
+}
+
+#browse .icon{
+    max-width: 1.2em;
+    max-height: 1.2em;
+    vertical-align:middle;
+}
+
+#browse section{
+    border: 0.2em;
+    border-style: double;
+}
+
+#browse section:hover{
+    border: 0.3em;
+    border-style: double;
+}
+
+/******************************************House details page***************************************************/
+.detailpage{
+    border: 0.4em;
+    border-style: inset;
+}
+
+.detailpage header h1{
+    text-align: center;
+}
+
+.detailpage ul{
+    list-style-type:none;
+}
+
+.detailpage li{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .detailpage main{
+        display: grid;
+        grid-template-columns: 6% 54% 6% 28% 6%;
+        grid-template-rows: auto;
+        grid-template-areas: "leftt pic rightt textt textt"
+                             ". comments comments comments .";
+        align-items: center;
+    }
+
+    #slide {
+        grid-area: pic;
+    }
+
+    #text{
+        grid-area: textt;
+    }
+
+    #comments{
+        grid-area: comments;
+    }
+
+    .detailmain .left{
+        grid-area: leftt;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    .detailmain .right{
+        grid-area: rightt;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .detailpage{
+        font-size: 200%;
+    }
+    .detailpage main{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: auto;
+        grid-template-areas: "leftt ha rightt"
+                             "w w w"
+                             "x x x";
+        align-items: center;
+    }
+
+    #slide {
+        grid-area: ha;
+    }
+
+    .detailmain .left{
+        grid-area: leftt;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    .detailmain .right{
+        grid-area: rightt;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    #text{
+        grid-area: w;
+    }
+
+    #comments{
+        grid-area: x;
+    }
+}
+
+
+.plb{
+    margin-bottom: 1em;
+}
+
+.plb h1{
+    margin-top: 1em;
+}
+
+.plb a,.plb span{
+    white-space: nowrap;
+    margin: 1em 0.1em 1em 0em;
+}
+
+#text .plb~p{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+#slide .slideshow img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 1%;
+}
+
+.detailmain div img{
+    width: 50%;
+}
+
+.detailmain #text{
+    align-self: center;
+    text-align: center;
+}
+
+.detailmain #text .intro{
+    line-height: 1.7em;
+}
+
+.detailmain #text .idencard{
+    box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-flex;
+    margin-top: 0.5em;
+}
+
+.detailmain #text .idencard img{
+    margin-left: 1em;
+}
+
+.detailmain #text img{
+    max-width: 5em;
+    max-height: 5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.detailmain #text p img{
+    max-width: 1.2em;
+    max-height: 1.2em;
+    vertical-align:middle;
+}
+
+.detailmain #text .idencard:hover {
+    box-shadow: 0 0.15em 0.18em 0 rgba(0,0,0,0.2);
+}
+
+.detailmain #text .line{
+    padding: 1em 0.5em;
+}
+
+.detailmain #text .intro{
+    text-align: left;
+}
+
+
+#slide ul {
+    list-style: none;
+}
+
+#slide{
+    margin:0;
+}
+
+#slide img{
+    max-height: 30em;
+}
+
+.comments{
+    text-align: left;
+    height: 20em;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+textarea{
+    width:98.5%;
+}
+
+#comments fieldset label,#comments input{
+    display: block;
+
+}
+
+.detailmain #text #kingtext{
+    line-height: 1.1em;
+}
+
+
+/************************************************************login logout sign up ************************************************/
+@media screen and (min-width: 1024px){
+    #loginpage{
+        background-image: url("login.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        text-align: center;
+        line-height: 7em;
+    }
+
+    #logoutpage{
+        background-image: url("logout.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        text-align: center;
+        line-height: 10em;
+    }
+
+    #signpage{
+        text-align: center;
+        background-color: LightGreen;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #loginpage{
+        background-color:BurlyWood;
+        text-align: center;
+        line-height: 7em;
+        font-size: 200%;
+    }
+
+    #logoutpage{
+        background-color:LightCyan;
+        text-align: center;
+        line-height: 10em;
+        font-size: 200%;
+    }
+
+    #signpage{
+        text-align: center;
+        background-color: LightGreen;
+        font-size: 300%;
+    }
+    #signpage form{
+        display: block;
+    }
+}
+
+
+#loginpage form{
+    text-align: center;
+    display: inline-block;
+}
+
+#loginpage a,#logoutpage a{
+    margin:1em 1em;
+    padding: 1em 1em;
+    border-radius: 7%;
+    color: white;
+    background-color: LightSteelBlue;
+}
+
+#logoutpage a{
+    background-color: Tomato;
+}
+
+#loginpage a:hover, #logoutpage a:hover{
+    padding: 1.2em 1.2em;
+    border-radius: 7%;
+    color: white;
+    background-color: DeepSkyBlue;
+}
+
+#logoutpage a:hover{
+    background-color: Red;
+}
+
+#loginpage span{
+    color:white;
+}
+
+
+/*************************************************************show fav page*********************************************************/
+@media screen and (min-width: 1024px){
+    #showfavpage table,th,td{
+        margin-left:auto;
+        margin-right:auto;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #showfavpage{
+        font-size: 200%;
+    }
+    #showfavpage table,th,td{
+        margin-left:auto;
+        margin-right:auto;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+#showfavpage{
+    text-align: center;
+    background-color: AntiqueWhite;
+}
+
+#showfavpage header,#showfavpage main,#showfavpage footer{
+    margin: 3em 0.5em;
+}
+
+#showfavpage section{
+    margin-bottom: 3em;
+    text-align: center;
+    display: block;
+}
+
+
+
+#showfavpage img{
+    height: 10em;
+    border-radius:2%;
+}
+
+#showfavpage a{
+    color:black;
+}
